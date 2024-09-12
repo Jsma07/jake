@@ -1,0 +1,26 @@
+/* Estilos para el modo oscuro */
+.dark {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  /* Estilos adicionales específicos para el modo oscuro */
+.dark .navbar {
+    /* Estilos específicos para la barra de navegación en modo oscuro */
+  }
+  
+  .dark .content {
+    /* Estilos específicos para el contenido en modo oscuro */
+  }
+  
+  /* Estilos generales para la aplicación */
+  .app-container {
+    transition: background-color 0.3s ease;
+    /* Otros estilos generales para el contenedor principal */
+  }
+
+  .dark .footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  

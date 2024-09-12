@@ -1,0 +1,110 @@
+.mis-citas-container {
+    position: relative;
+    background: url('https://img.freepik.com/vector-gratis/fondo-acuarela_87374-57.jpg?w=1060&t=st=1725245362~exp=1725245962~hmac=9f83db4bd945916bd5a5eaf3efb69032770173e77d29af26799ac673662eaa2f') no-repeat center center fixed;
+    background-size: cover;
+    height: auto; /* Corregido: sin comillas */
+    width: 100%;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden; /* Para asegurar que el pseudo-elemento no se desborde */
+}
+
+.mis-citas-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Corregido: cambiado de 1000% a 100% */
+    background: linear-gradient(to bottom, rgba(22, 108, 107, 0.1), rgba(0, 0, 0, 0.1)); /* Ajustado el color del degradado */
+    z-index: 1; /* Asegura que el overlay esté sobre la imagen pero debajo del contenido */
+}
+
+.mis-citas-container > * {
+    position: relative;
+    z-index: 2; /* Asegura que el contenido esté por encima del overlay */
+}
+
+.fc-toolbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.fc-toolbar-title {
+    color: #8e24aa; /* Título con color morado */
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fc-button {
+    background-color: #ae4aff; /* Color morado más claro para los botones */
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease; /* Transición suave para los cambios de color */
+}
+
+.fc-button:hover {
+    background-color: #8e24aa; /* Color morado oscuro al pasar el cursor */
+}
+
+.fc-button:active, /* Cuando el botón está presionado */
+.fc-button:focus { /* Cuando el botón tiene el foco */
+    background-color: #c16fff; /* Color rosado más vibrante al estar activo o seleccionado */
+    outline: none; /* Elimina el contorno del enfoque si es necesario */
+}
+
+.fc-prev-button,
+.fc-next-button {
+    background-color: #8e24aa; /* Color morado oscuro para los botones de navegación */
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: background-color 0.3s ease; /* Transición suave para los cambios de color */
+}
+
+.fc-prev-button:hover,
+.fc-next-button:hover {
+    background-color: #a83d8f; /* Color morado más oscuro al pasar el cursor */
+}
+
+.fc-prev-button:active,
+.fc-next-button:active,
+.fc-prev-button:focus,
+.fc-next-button:focus {
+    background-color: #c16fff; /* Color rosado más vibrante al estar activo o seleccionado */
+}
+
+.fc-today-button {
+    background-color: #e0aaff; /* Color morado claro para el botón de hoy */
+    color: #fff;
+    border-radius: 20px;
+    transition: background-color 0.3s ease; /* Transición suave para los cambios de color */
+}
+
+.fc-today-button:hover {
+    background-color: #d18bff; /* Color morado más oscuro al pasar el cursor */
+}
+
+.fc-today-button:active,
+.fc-today-button:focus {
+    background-color: #c16fff; /* Color rosado más vibrante al estar activo o seleccionado */
+}
+
+.fc-toolbar button.fc-button-primary {
+    background-color: #e0aaff; /* Color morado claro para el botón primario en la toolbar */
+}
+
+.fc-toolbar button.fc-button-primary:hover {
+    background-color: #8e24aa; /* Color morado oscuro al pasar el cursor */
+}
+
